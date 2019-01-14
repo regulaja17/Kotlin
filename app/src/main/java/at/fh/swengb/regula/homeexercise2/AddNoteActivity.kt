@@ -32,7 +32,7 @@ class AddNoteActivity : AppCompatActivity() {
 
             finish()
         }
-        else if (title == "" && content == "" ) {
+        else if (title.isBlank() && content.isBlank() ) {
             val textStart = "Please insert a valid note!"
             val duration = Toast.LENGTH_SHORT
             val toast = Toast.makeText(applicationContext, textStart, duration)
